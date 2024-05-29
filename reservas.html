@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="principal.html">Inicio</a></li>
+        <li><a href="sobrenosotros.html">Nuestra historia</a></li>
+        <li><a href="vinos.html">Nuestros vinos</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+        <div class="slide2">
+          <img src="./img/degustacion.jpg">
+          <img src="./img/comida1.jpg">
+          <img src="./img/comida2.jpg">
+          <img src="./img/degustacion1.jpg">
+          <img src="./img/degustacion2.jpg">
+        </div>
+    
+      <div class="formulario-reserva">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" required>
+          <label for="telefono">Numero de telefono: </label>
+          <input type="number" id="telefono" placeholder="Opcional" pattern="[1-9]{10}" />
+          <label for="numero personas">Escoja el numero de personas invitadas:</label>
+          <select name="Numero de personas" id="personas">
+            <option value="2-4">2-4</option>
+            <option value="5-8">5-8</option>
+            <option value="9-12">9-12</option>
+            <option value="13-15">13-15</option>
+            <option value="+16">Para reservas de más de 16 personas por favor llame al 900 123 123.</option>
+          </select>
+          <br><br>
+          <input type="submit" value="Enviar">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="direccion">
+      <p> Dirección </p>
+      <p> Plaza de la Paz 1</p>
+      <p> 26200, Haro - La Rioja</p>
+      <small class="copyright__content"> Bodegas Tolls © 2023</a></small>
+    </div>
+  </footer>
+  <script src="scripts2.js"></script>
+</body>
+
+</html>
